@@ -2,7 +2,7 @@
 #include <stdlib.h>
 //Fluxo de Caixa
 //Luiz Elias e Gustavo Mendes
-//Nome da Impresa: LG Sapiens
+//Nome da Empresa: LG Sapiens
 //Data de Início: 13/11
 //Data final: 24/11
 //Data da ultima Atualização: 22/11
