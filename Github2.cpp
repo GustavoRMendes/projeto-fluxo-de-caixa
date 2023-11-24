@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 //Fluxo de Caixa
-//Luis Elias e Gustavo Mendes
+//Luiz Elias e Gustavo Mendes
 //Nome da Impresa: LG Sapiens
-//Data de Início: 13/11
+//Data de InÃ­cio: 13/11
 //Data final: 24/11
-//Data da ultima Atualização: 22/11
+//Data da ultima AtualizaÃ§Ã£o: 22/11
 
 int main(void) {
     float CustosDiretos, DespesasOperacionais, DespesasGerais, AtivosFixos, Pagamentosdeemprestimos, Suprimentos, Fornecedores;
@@ -19,14 +19,14 @@ int main(void) {
     system("color F0");
     printf("\t Bem-vindo(a) a LG SAPIENS \n");
 
-    // Entrada do dinheiro inicial apenas no primeiro mês
+    // Entrada do dinheiro inicial apenas no primeiro mÃªs
     printf("\n\t Insira o dinheiro inicial do primeiro mes: \n\t");
     scanf("%f", &DinheiroInicial);
 
     for (int mes = 0; mes < 12; mes++) {
         printf("\n\t Vamos calcular os recibos em dinheiro para o mes %d? \n", mes + 1);
 
-        // Inserção dos outros valores
+        // InserÃ§Ã£o dos outros valores
         printf("\n\t Digite o total de vendas em dinheiro do mes %d: \n\n\t", mes + 1);
         scanf("%f", &VendasEmDinheiro);
 
@@ -52,7 +52,7 @@ int main(void) {
         // Despesas
         printf("\n\t Vamos calcular as despesas agora para o mes %d? \n", mes + 1);
 
-        // Inserção das despesas
+        // InserÃ§Ã£o das despesas
         printf("\n\t Insira os custos diretos de produto do mes %d: \n\t", mes + 1);
         scanf("%f", &CustosDiretos);
 
@@ -84,13 +84,13 @@ int main(void) {
 
         printf("\n\t O saldo final no mes %d foi: %.2f \n\t", mes + 1, totalMes[mes]);
 
-        // Cálculo da variação líquida da caixa
+        // CÃ¡lculo da variaÃ§Ã£o lÃ­quida da caixa
         variacaoLiquidaCaixa += totalMes[mes] - DinheiroInicial;
 
-        // Ajuste do dinheiro inicial para os próximos meses
+        // Ajuste do dinheiro inicial para os prÃ³ximos meses
         DinheiroInicial = totalMes[mes];
 
-        // Cálculo do total fiscal do ano
+        // CÃ¡lculo do total fiscal do ano
         totalFiscaisAno += Impostos;
 
         system("\n\tpause");
@@ -100,7 +100,7 @@ int main(void) {
     printf("\n\t A variacao liquida da caixa ao longo do ano foi: %.2f \n\t", variacaoLiquidaCaixa);
     printf("\n\t O total fiscal do ano foi: %.2f \n\t", totalFiscaisAno);
 
-    // Verifica se houve lucro ou prejuízo
+    // Verifica se houve lucro ou prejuÃ­zo
     if (variacaoLiquidaCaixa >= 0) {
         printf("\n\t Houve lucro ao longo do ano: %.2f \n\t", variacaoLiquidaCaixa);
     } else {
